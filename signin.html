@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIGN IN PAGE</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <style>
+      form {
+            margin: 100px auto;
+            padding: 10px 13px;
+            width: 30%;
+            font-size: larger;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            box-shadow: 5px 5px 5px 5px rgb(129, 128, 128)
+            
+            
+        }
+
+        #submit_button {
+            background-color: black;
+            border-radius: 10px;
+            padding: 12px 8px;
+            color: white;
+            margin: 10px;
+            width: 90%;
+            cursor: pointer;
+            
+        }
+
+        #inputs {
+            padding: 16px 12px;
+            width: 90%;
+            margin: 5px 0;
+            margin-top: 30px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: large;
+            
+        }
+
+        .lines {
+            position: relative;
+            max-width: 550px;
+            margin: 30px;
+            text-align: center;
+        }
+
+        .lines:before {
+            content: "";
+            height: 1px;
+            width: 190px;
+            background: black;
+            display: block;
+            position: absolute;
+            top: 50%;
+            left: 0;
+        }
+
+        .lines:after {
+            content: " ";
+            height: 1px;
+            width: 190px;
+            background: rgb(70, 68, 68);
+            display: block;
+            position: absolute;
+            top: 50%;
+            right: 0;
+        }
+
+        #inputs {
+            width: 500px;
+
+        }   
+        #icons{
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+   <form>
+    <p>Don't have an account ? <a href="http://127.0.0.1:5500/index.html" style=" text-decoration: none ;"><strong>sign up</strong></a> </p>
+    <h1>Sign In</h1>
+    
+    <label for="Email:">Email:</label>
+    <br>
+    <input type="Email" placeholder="Enter Email" id="inputs" />
+    <br><br>
+    <label label for="password">Password:</label>
+    <br>
+    <input type="password" placeholder="password" id="inputs" />
+    <br><br><br>
+    <input type="checkbox" />
+    <label for="text">I've Read And Agree With <strong>The Terms Of Service </strong> And Our <strong>Privacy
+            Policy</strong> </label>
+    <br><br>
+    <button type="submit" id="submit_button"><a href="http://127.0.0.1:5500/table.html" style="color: white;text-decoration: none;">sign In</a></button>
+    <br><br>
+    <p class="lines">Or Sign In With</p>
+    <div style="display: flex; justify-content: center; gap: 40px;"> 
+    <i class="fa-brands fa-google"id="icons" style="box-shadow: 2px 2px 2px 2px rgb(129, 128, 128)"></i>
+    <i class="fa-brands fa-facebook"id="icons"></i>
+</div>
+   </form> 
+</body>
+</html>
